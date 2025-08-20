@@ -20,38 +20,7 @@ const Chat = () => {
       unreadCount: 0,
       participants: ['1', '2'],
     },
-    {
-      id: '2',
-      name: 'Sarah Wilson',
-      lastMessage: 'Hey! How are you doing?',
-      lastMessageTime: new Date(Date.now() - 3600000),
-      unreadCount: 2,
-      participants: ['1', '3'],
-    },
-    {
-      id: '3',
-      name: 'Team Project',
-      lastMessage: 'The deadline is next Friday',
-      lastMessageTime: new Date(Date.now() - 7200000),
-      unreadCount: 5,
-      participants: ['1', '2', '3', '4'],
-    },
-    {
-      id: '4',
-      name: 'Alex Johnson',
-      lastMessage: 'Thanks for the help!',
-      lastMessageTime: new Date(Date.now() - 86400000),
-      unreadCount: 0,
-      participants: ['1', '5'],
-    },
-    {
-      id: '5',
-      name: 'Design Team',
-      lastMessage: 'New mockups are ready for review',
-      lastMessageTime: new Date(Date.now() - 172800000),
-      unreadCount: 1,
-      participants: ['1', '2', '6', '7'],
-    },
+    
   ]);
 
   const [messages, setMessages] = useState<Message[]>([]);
