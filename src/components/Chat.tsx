@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, LogOut, MessageCircle, Users, Settings, Menu, X } from 'lucide-react';
-import { useAuth } from '../hooks/useAuth';
+import { useAuth } from '../hooks/AuthProvider';
 import { Message, Chat as ChatType } from '../types';
 import ChatMessage from './ChatMessage';
 import ChatSidebar from './ChatSidebar';
@@ -67,7 +67,7 @@ const Chat = () => {
 
   useEffect(() => {
     const newConnection = new signalR.HubConnectionBuilder()
-      .withUrl("http://localhost:5000/chathub")
+      .withUrl("http://localhost:7027/chathub")
       .withAutomaticReconnect()
       .build();
 

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Lock, User, Eye, EyeOff, MessageCircle, Loader2 } from 'lucide-react';
-import { useAuth } from '../hooks/useAuth';
-
+import { useAuth } from '../hooks/AuthProvider';
 const Register = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
